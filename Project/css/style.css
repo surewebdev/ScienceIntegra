@@ -6,7 +6,9 @@ body {
 .navbar-nav li {
   text-transform: uppercase;
 }
-
+.bg-light{
+  background-color: #ffffff!important;
+}
 .navbar-brand img {
   max-width: 200px;
 }
@@ -16,7 +18,32 @@ body {
   font-size: 13px;
 }
 
-.bgimage {
+#navbarCustom li{
+  position: relative;
+}
+#navbarCustom li:before{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: scale(0);
+    background: #3975a1;
+    transition: all 0.3s ease;
+}
+#navbarCustom li:hover:before{
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+  .bgimage{
+    margin-top: 75px;
+  }
+/*.bgimage {
   width: 100%;
   height: 840px;
   background: url('../images/hero.png');
@@ -29,16 +56,73 @@ body {
 .bgimage h3 {
   color: white;
   text-shadow: 2px 2px #333;
+}*/
+.specialization a{
+  text-decoration: none;
+  display: block;
 }
-
+.specialization-1,.specialization-2,.specialization-3,.specialization-4,.specialization-5 {
+    position: relative;
+    padding: 30px 20px;
+    background: #3975a1;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+.specialization-1{
+  /*opacity: 0;*/
+}
 .specialization img {
-  max-width: 100px;
-  max-height: 100px;
+      max-width: 70px;
+    max-height: 70px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+.specialization figcaption{
+  position: relative;
+  transition: all 0.3s ease;
+}
+.specialzed-list:hover{
+  background-color: #b32265c7;
+  transition: all 0.3s ease;
 }
 
-.border-2x {
-  border: 2px solid #dee2e6 !important;
+.specialization figcaption:before{
+      position: absolute;
+    content: '';
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0px;
+    height: 2px;
+    background-color: #fff;
 }
+
+.specialzed-list:hover figcaption:before{
+      width: 100px;
+      transition: all 0.3s ease;
+}
+.visible-special{
+  opacity: 1;
+}
+.carousel h3,
+.carousel h5{
+  position: relative;
+  z-index: 9;
+}
+.overlay {
+background: rgba(0,0,0,0.4);
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+pointer-events: none;
+  }
+
+/*.border-2x {
+  border: 2px solid #dee2e6 !important;
+}*/
 
 .aboutbg {
   width: 100%;
@@ -60,10 +144,13 @@ body {
 
 
 /*FOOTER NAV*/
-
+#footer-nav{
+  background-color: #3975a0;
+  color: #ffffff;
+}
 #footer-nav a {
   font-size: 11px;
-  color: #aaa;
+  color: #ffffff;
 }
 
 
@@ -133,11 +220,85 @@ body {
   margin-left: -1em;
   /* Also needed for space (tweak if needed) */
 }
+.sep{
+    position: relative;
+    display: block;
+    clear: both;
+    margin: 0px 0 30px;
+    min-width: 100%;
+    height: 1px;
+    border-top: 1px solid;
+    color: #dadade;
+}
+.sep:before {
+    width: 60px;
+    content: "";
+    height: 2px;
+    background: #3695eb;
+    position: absolute;
+    z-index: 55;
+    top: -1px;
+}
+.sec-title{
+
+}
+.back-to-top {
+    position: fixed;
+    bottom: 85px;
+    right: 15px;
+    display: none;
+}
+
+/*REGISTER FORM*/
+.register-form label{
+      font-size: 14px;
+    font-weight: bold;
+}
+.register-form input {
+  border-radius: 0px;
+}
+.register-form .form-group{
+
+}
+.register-form{
+      background: #eee;
+    padding: 30px 30px;
+}
+.reg-btn{
+  position: relative;
+  left: 50%;
+  transform: translateX(-70%);
+  background-color: #b32265;
+  border-radius: 0px;
+  color: #fff;
+}
+
+
+
+
+
 
 @media only screen and (max-width: 600px) {
-  .bgimage {
+  /*.bgimage {
     max-height: 300px;
-  }
+  }*/
+
+.specialization .col{
+  width: 70%;
+    display: block;
+    flex: none;
+    margin: 0 auto 10px;
+}
+.recognization img{
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+.register-form .pr-5{
+  padding-right: 0px!important;
+}
+.reg-btn{
+  transform: translateX(-50%);
+}
 }
 
 
