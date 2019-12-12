@@ -29,7 +29,7 @@ body {
     width: 100%;
     height: 2px;
     transform: scale(0);
-    background: #3975a1;
+    background: #b32265;
     transition: all 0.3s ease;
 }
 #navbarCustom li:hover:before{
@@ -141,7 +141,14 @@ pointer-events: none;
   background-position: center;
   background-size: cover;
 }
-
+.coursesbg {
+  width: 100%;
+  height: 480px;
+  background: url('../images/about-hero.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 /*FOOTER NAV*/
 #footer-nav{
@@ -266,8 +273,8 @@ pointer-events: none;
 }
 .reg-btn{
   position: relative;
-  left: 50%;
-  transform: translateX(-70%);
+  /*left: 50%;*/
+  /*transform: translateX(-70%);*/
   background-color: #b32265;
   border-radius: 0px;
   color: #fff;
@@ -275,8 +282,35 @@ pointer-events: none;
 
 
 
+/*LOGIN FORM*/
+.login-form label{
+      font-size: 14px;
+    font-weight: bold;
+}
+.login-form input {
+  border-radius: 0px;
+}
+.login-form .form-group{
+
+}
+.login-form{
+      background: #eee;
+    padding: 30px 30px;
+}
+.login-btn{
+  position: relative;
+  /*left: 50%;*/
+  /*transform: translateX(-70%);*/
+  background-color: #b32265;
+  border-radius: 0px;
+  color: #fff;
+}
 
 
+
+.login-forgot-pass a,.forgot-login a,.reg-forgot-login-btn a{
+  color: #000;
+}
 
 @media only screen and (max-width: 600px) {
   /*.bgimage {
@@ -297,7 +331,7 @@ pointer-events: none;
   padding-right: 0px!important;
 }
 .reg-btn{
-  transform: translateX(-50%);
+  /*transform: translateX(-50%);*/
 }
 }
 
