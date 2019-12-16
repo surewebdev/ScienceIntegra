@@ -11,7 +11,8 @@
       <link href="css/style.css" rel="stylesheet">
    </head>
    <body>
-      <nav class="navbar navbar-expand-md align-items-end">
+      <nav class="navbar navbar-expand-md align-items-end fixed-top navbar-light bg-light">
+         <a class="pg_pro" href="#"><img src="images/pg_pro.png"></a>
          <a class="navbar-brand" href="#"><img src="images/header-logo.png"></a>
          <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarCustom" aria-controls="navbarCustom" aria-expanded="false" aria-label="Toggle navigation">
          <span class="navbar-toggler-icon"></span>
@@ -21,14 +22,21 @@
                <li class="nav-item active">
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                </li>
-               <li class="nav-item">
+               <!--  <li class="nav-item">
                   <a class="nav-link" href="#">About us</a>
-               </li>
+                  </li> -->
                <li class="nav-item">
                   <a class="nav-link" href="aboute3.html">About highgrad E3</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-link" href="#">Courses</a>
+                  <a  class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Courses</a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Gynaecology</a>
+                     <a class="dropdown-item" href="#">Pediatrics</a>
+                     <a class="dropdown-item" href="#">Orthopedics</a>
+                     <a class="dropdown-item" href="#">Cardiology</a>
+                     <a class="dropdown-item" href="#">gastroenteritis</a>
+                  </div>
                </li>
                <li class="nav-item">
                   <a class="nav-link" href="programoutline.html">Programme outline</a>
@@ -43,9 +51,10 @@
                   <a class="nav-link" href="#">MCQ Test</a>
                </li>
             </ul>
+            <a href=""><img src="images/highgrade31.jpg" class="highgrad"></a>
          </div>
       </nav>
-      <section class="about py-4">
+      <section class="about ptb-140-40">
          <div class="container">
              <div class="row">
             <div class="col-md-12">
@@ -108,47 +117,47 @@
              </div> 
          </div>
       </section>
-      <footer class="border-top py-3 text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <p class="footer-copyright">COPYRIGHT @ 2019. SCIENCEINTEGRA</p>
-          </div>
-          <div class="col-md-12">
-            <ul class="footer-certificates">
-               <li>
-                  <img src="images/recog1.png" class="img-fluid">
-               </li>
-               <li>
-                  <img src="images/recog2.png" class="img-fluid">
-               </li>
-               <li>
-                  <img src="images/recog3.png" class="img-fluid">
-               </li>
-            </ul>
-          </div>
-          <div class="col-md-12">
-            <ul class="footer-links">
-               <li>
-                  <a class="" href="#">Terms Privacy</a>
-               </li>
-               <li>
-                  <a class="" href="#">Policy and Cookie</a>
-               </li>
-               <li>
-                  <a class="" href="#">Policy</a>
-               </li>
-               <li>
-                  <a class="" href="#">FAQs</a>
-               </li>
-               <li>
-                  <a class="" href="#">CONTACT US</a>
-               </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+      <footer class="border-top py-3">
+         <div class="container-fluid h-100">
+            <div class="row align-items-center h-100 d-flex justify-content-around">
+               <div class="col-md mx-auto">
+                  <p class="footer-copyright">COPYRIGHT @ 2019. SCIENCEINTEGRA</p>
+               </div>
+               <div class="col-md mx-auto text-center">
+                  <ul class="footer-certificates">
+                     <li>
+                        <img src="images/recog1.png" class="img-fluid">
+                     </li>
+                     <li>
+                        <img src="images/recog2.png" class="img-fluid">
+                     </li>
+                     <li>
+                        <img src="images/recog3.png" class="img-fluid">
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-md mx-auto">
+                  <ul class="footer-links">
+                     <li>
+                        <a class="" href="#">Terms Privacy</a>
+                     </li>
+                     <li>
+                        <a class="" href="#">Policy and Cookie</a>
+                     </li>
+                     <li>
+                        <a class="" href="#">Policy</a>
+                     </li>
+                     <li>
+                        <a class="" href="#">FAQs</a>
+                     </li>
+                     <li>
+                        <a class="" href="#">CONTACT US</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
       <script src="js/jquery-3.4.1.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
    </body>
